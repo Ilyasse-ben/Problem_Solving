@@ -12,10 +12,8 @@ Output: 321
 class Solution {
     public int reverse(int x) {
         int reversedX=0;
-        int MAX_VALUE = 2147483647; // 2**31 - 1
-        int MIN_VALUE = -2147483648; // 2**31 
         while(x!=0) {
-            if(reversedX> MAX_VALUE/10 || reversedX<-MIN_VALUE/10)
+            if(reversedX> Integer.MAX_VALUE/10 || reversedX<Integer.MIN_VALUE/10)
                 return 0;
             reversedX=reversedX*10+x%10;
             x/=10;
