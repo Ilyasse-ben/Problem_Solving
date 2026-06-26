@@ -16,7 +16,7 @@
 public class RangSeum {
     int[] nums;
 
-    public NumArray(int[] nums) {
+    public RangSeum(int[] nums) {
         this.nums=nums;
         for (int i = 1; i < nums.length; i++) {
             this.nums[i] += this.nums[i-1];
